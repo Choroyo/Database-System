@@ -1,0 +1,9 @@
+SELECT
+	P_DESCRIPT,
+    P_QOH,
+    P_PRICE,
+    (P_QOH * P_PRICE) AS `Subtotal`
+FROM
+	PRODUCT
+ORDER BY
+	`Subtotal` DESC;
